@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="427.0" prefWidth="413.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.verdensbedstelommeregner.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox prefHeight="420.0" prefWidth="374.0">
+         <children>
+            <TextField fx:id="inPut" text="?" />
+            <TextField fx:id="lblResult" />
+            <Button fx:id="onButtonAddition" mnemonicParsing="false" text="+">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="onButtonMinus" mnemonicParsing="false" text="-">
+               <HBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="onButtonMultiply" mnemonicParsing="false" text="x">
+                     <HBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="onButtonDivide" mnemonicParsing="false" text="/">
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+
+</VBox>

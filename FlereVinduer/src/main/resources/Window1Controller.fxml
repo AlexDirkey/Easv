@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flerevinduer.controller.Window1">
+
+    <children>
+        <TextField fx:id="txtName" layoutX="217.0" layoutY="72.0" />
+        <Button layoutX="273.0" layoutY="207.0" mnemonicParsing="false" onAction="#onButtonClick" text="Button" />
+      <Text layoutX="149.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your name?" wrappingWidth="93.421875" />
+    </children>
+
+</AnchorPane>

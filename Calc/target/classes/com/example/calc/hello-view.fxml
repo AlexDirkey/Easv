@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="322.0" prefWidth="411.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.calc.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txtvalue1" text="?" />
+            <Label fx:id="lblOperator" text="Label" />
+            <TextField fx:id="tftvalue2" prefHeight="19.0" prefWidth="129.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="353.0">
+         <children>
+            <Button fx:id="buttonPlus" mnemonicParsing="false" onAction="#onPlusOperation" text="+">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="ButtonMinus" mnemonicParsing="false" text="-">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonMultiply" mnemonicParsing="false" text="x">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonDivide" mnemonicParsing="false" text="/">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="buttonCalc" mnemonicParsing="false" prefHeight="55.0" prefWidth="113.0" text="Calculate!">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="RESULT:" />
+                  <Label fx:id="lblresult" text="&lt;result&gt;">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
